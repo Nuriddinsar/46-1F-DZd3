@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --blue: #3532e7;
+    --dark-blue: #3e2ca7;
+}
+
+.box {
+    width: 85vw;
+    height: 90vh;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.btn {
+    width: 14vw;
+    height: 6vw;
+    background-color: var(--blue);
+    border: 4px solid var(--dark-blue);
+    border-radius: 99px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn:active {
+    background-color: var(--dark-blue);
+    border-color: var(--blue);
+}
+
