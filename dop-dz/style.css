@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main__block {
+    display: flex;
+    padding: 20px 40px;
+    gap: 64px;
+}
+
+.box {
+    width: 500px;
+    max-height: 300px;
+    padding: 20px 30px;
+    border-radius: 18px;
+    background-color: rgb(89, 89, 255);
+}
+
+.title {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.input__photo {
+    display: flex;
+    gap: 0;
+    align-items: center;
+}
+
+input {
+    width: 300px;
+    height: 32px;
+    background-color: #fff;
+    margin: 16px 0;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.input {
+    width: 270px;
+    border-radius: 8px 0 0 8px;
+}
+
+.file__input {
+    width: 30px;
+    height: 32px;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: background-color 0.2s;
+    border: 1px solid gray;
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.del[type=file] {
+    display: none;
+}
+
+.btn__input {
+    width: 200px;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 24px;
+    font-weight: 400;
+    color: green;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+.box2 {
+    width: 500px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 30px;
+    border-radius: 18px;
+    background-color: rgb(89, 89, 255);
+}
+
+.img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: rgb(170, 168, 168);
+    border-radius: 14px;
+}

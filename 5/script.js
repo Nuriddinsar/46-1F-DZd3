@@ -10,14 +10,14 @@ const birthdayFunc = () => {
     let second = document.getElementById('second');
 
     let now = new Date();
-    let bekzat = new Date(2026, 9, 18);
+    let bekzat = new Date(2026, 9, 15);
 
     let difference = (bekzat.getTime() - now.getTime()) / 1000;
 
-    let days = Math.floor(difference / 60 / 60 / 24);
-    let hours = Math.floor((difference / 60 / 60) % 24);
-    let minutes = Math.floor((difference / 60) % 60);
-    let seconds = Math.floor((difference) % 60);
+    let days = difference > 0 ? Math.floor(difference / 60 / 60 / 24) : Math.ceil(difference / 60 / 60 / 24);
+    let hours = Math.trunc((difference / 60 / 60) % 24);
+    let minutes = Math.trunc((difference / 60) % 60);
+    let seconds = Math.trunc((difference) % 60);
 
     day.textContent = formatNum(days);
     hour.textContent = formatNum(hours);
@@ -41,3 +41,4 @@ birthdayFunc();
 let interval = setInterval(() => {
     birthdayFunc();
 }, 1000)
+
