@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 400px;
+    min-height: 440px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cecdcd;
+}
+
+.text {
+    width: 340px;
+    height: 340px;
+    padding: 4px;
+    background-color: #ececec;
+    border-radius: 8px;
+    overflow: auto;
+    
+    scrollbar-color: #84fd4f #ececec;
+    scrollbar-width: thin;
+}
+
+.loading {
+    display: none;
+    align-items: end;
+    gap: 6px;
+    color: #6b6b6b;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    width: 150px;
+    height: 34px;
+    background-color: #84fd4f;
+    border-color: green;
+    border-radius: 6px;
+}
+
+.loading_point {
+    width: 24px;
+    height: 10px;
+    /* margin: 50px auto; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.elements {
+    position: absolute;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #6b6b6b;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1.2s;
+    box-shadow: 0 0 16px #a8a9ab;
+}
+
+.elements--1 {
+    transform: translate(0, -50%);
+    left: 0;
+    animation-name: point--1;
+    animation-delay: 0;
+}
+
+@keyframes point--1 {
+    0% {
+        background-color: #6b6b6b;
+    }
+
+    50% {
+        top: 0;
+        background-color: #afafaf;
+    }
+
+    100% {
+        background-color: #6b6b6b;
+    }
+}
+
+.elements--2 {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    animation-name: point--2;
+    animation-delay: 0.3s;
+}
+
+@keyframes point--2 {
+    0% {
+        background-color: #6b6b6b;
+    }
+
+    50% {
+        top: 0;
+        background-color: #afafaf;
+    }
+
+    100% {
+        background-color: #6b6b6b;
+    }
+}
+
+.elements--3 {
+    transform: translate(0, -50%);
+    right: 0;
+    animation-name: point--3;
+    animation-delay: 0.6s;
+}
+
+@keyframes point--3 {
+    0% {
+        background-color: #6b6b6b;
+    }
+
+    50% {
+        top: 0;
+        background-color: #afafaf;
+    }
+
+    100% {
+        background-color: #6b6b6b;
+    }
+}
