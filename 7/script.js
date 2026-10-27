@@ -8,7 +8,7 @@ btn.addEventListener('click', () => {
     loading.style.display = "flex";
     btn.style.background = "#ececec";
 
-    fetch('https://dummyjson.com')
+    fetch('https://dummyjson.com/quotes/random')
         .then((response) => {
             return response.json();
         })
