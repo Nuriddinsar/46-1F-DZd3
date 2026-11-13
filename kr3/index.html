@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yehbllby</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input, button { font-size: 18px; margin: 5px 0; }
+    #result { width: 300px; min-height: 20px; margin-top: 20px; padding: 0 15px; border: 2px solid #ccc; border-radius: 8px; }
+    .legend { background: gold; }
+    .pro { background: lightgreen; }
+    .newbie { background: lightblue; }
+    /* .error { background: #ffd6d6; } */
+    .name_error, .number_error { color: red; font-weight: bold; margin: -5px 0; }
+    .card {padding: 15px; margin: 0 -15px 12px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
+  </style>
+</head>
+<body>
+  <h1 id="title"></h1>
+  <p class="name_error"></p>
+  <input id="nameInput" placeholder="Имя и фамилия"><br>
+  <p class="number_error"></p> 
+  <input id="numberInput" placeholder="Число (очки или цена)"><br>
+  <button id="btn">Создать карточку</button>
+  <div id="result"></div>
+</body>
+<script src="./script.js"></script>
+</html>
