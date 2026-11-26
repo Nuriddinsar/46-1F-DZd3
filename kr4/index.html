@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yehbllby</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <div class="title__main">
+                <h3>Student Manager</h3>
+                <p class="text">Управление успеваемостью студентов</p>
+            </div>
+            <div class="scores">
+                <div class="scores__el">
+                    <h2 class="total-count">0</h2>
+                    <p class="scores__text">Всего студентов</p>
+                </div>
+                <div class="scores__el">
+                    <h2 class="avg-score">0</h2>
+                    <p class="scores__text">Средний балл</p>
+                </div>
+            </div>
+        </div>
+        <div class="addStudens">
+            <h3>Добавить студента</h3>
+            <div class="addStudensInp">
+                <input type="text" class="student_el student__name" placeholder="Имя студента">
+                <input type="number" class="student_el student__ball" value="80">
+            </div>
+            <button class="btnAdd">+ Добавить</button>
+        </div>
+        <div class="main__list">
+            <input type="text" class="student_el inp-filter" placeholder="Поиск по имении...">
+            <div class="list__title">
+                <h4>Список студентов</h4>
+                <select name="country" class="country">
+                    <option value="1">По добавлению</option>
+                    <option value="2">Высокие баллы</option>
+                    <option value="3">Ниизкие баллы</option>
+                </select>
+            </div>
+            <ul class="list">
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
