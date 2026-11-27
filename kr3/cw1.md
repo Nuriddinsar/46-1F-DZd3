@@ -1,5 +1,5 @@
 ### Заготовка
-
+ 
 ```
 <!DOCTYPE html>
 <html lang="ru">
