@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yehbllby</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://googleapis.com" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="app">
+    <h1>Мини-приложение «Время»</h1>
+    <p id="greeting"></p>
+
+    <section class="block">
+      <h2>Часы</h2>
+      <div id="clock" class="digits">00:00:00</div>
+      <div id="date"></div>
+    </section>
+
+    <section class="block">
+      <h2>Секундомер</h2>
+      <div id="stopwatch" class="digits">00:00.00</div>
+      <button id="swStart">Старт</button>
+      <button id="swStop">Стоп</button>
+      <button id="swLap">Круг</button>
+      <button id="swReset">Сброс</button>
+      <ul id="lapsList"></ul>
+    </section>
+
+    <section class="block">
+      <h2>Таймер</h2>
+      <input id="timerInput" type="number" min="1" value="10"> сек.
+      <button id="timerStart">Старт</button>
+      <button id="timerPaus"> Пауза</button>
+      <button id="timerReset"> Сброс</button>
+      <div id="timerView" class="digits">00:10</div>
+      <p id="timerMsg"></p>
+    </section>
+
+    <section class="block">
+      <h2>До Нового года осталось</h2>
+      <div class="timer-row">
+        <div class="timer-item">
+          <h2 class="squares" id="day"></h2>
+          <div class="squares__text">дней</div>
+        </div>
+        <div class="timer-item">
+          <h2 class="squares" id="hour"></h2>
+          <div class="squares__text">часов</div>
+        </div>
+        <div class="timer-item">
+          <h2 class="squares" id="minute"></h2>
+          <div class="squares__text">минут</div>
+        </div>
+        <div class="timer-item">
+          <h2 class="squares" id="second"></h2>
+          <div class="squares__text">секунд</div>
+        </div>
+      </div>
+      <div class="bday">🥳С Новым Годом тебя🎉</div>
+    </section>
+  </div>
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>

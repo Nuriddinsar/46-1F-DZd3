@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+body {
+    background: #161165;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.app {
+    width: 420px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+#greeting {
+    text-align: center;
+    color: #b8b5ff;
+    margin-bottom: 10px;
+}
+
+.block {
+    background: #211997;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 16px;
+}
+
+.block h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.digits {
+    font-size: 44px;
+    font-weight: bold;
+    margin: 10px 0;
+    font-variant-numeric: tabular-nums;
+}
+
+button {
+    padding: 10px 16px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #161165;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-top: 6px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #2d23c7;
+}
+
+input {
+    padding: 8px 10px;
+    width: 75px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background: #161165;
+    color: #fff;
+    outline: none;
+}
+
+#lapsList {
+    list-style: none;
+    margin-top: 12px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#lapsList li {
+    padding: 6px 12px;
+    margin-top: 6px;
+    background: #161165;
+    border-radius: 6px;
+    font-size: 16px;
+    font-variant-numeric: tabular-nums;
+}
+
+.squares {
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161165;
+    font-size: 24px;
+    font-variant-numeric: tabular-nums;
+}
+
+.timer-row {
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+}
+
+.timer-item {
+    text-align: center;
+}
+
+.squares__text {
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    margin-top: 8px;
+    color: #d0ceff;
+}
+
+.bday {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+}
